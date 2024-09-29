@@ -12,7 +12,7 @@ def test_generated_files(tmpdir):
             "description": "blah",
         },
     )
-    assert paths(tmpdir) == {'winzy-foo\\.github', 'winzy-foo\\.github\\workflows\\test.yml', 'winzy-foo', 'winzy-foo\\LICENSE', 'winzy-foo\\README.md', 'winzy-foo\\tests', 'winzy-foo\\winzy_foo', 'winzy-foo\\.github\\workflows\\publish.yml', 'winzy-foo\\.github\\workflows', 'winzy-foo\\tests\\test_winzy_foo.py', 'winzy-foo\\winzy_foo\\__init__.py', 'winzy-foo\\pyproject.toml', 'winzy-foo\\.gitignore'}
+    assert paths(tmpdir) == {'winzy-foo/.github', 'winzy-foo/.github/workflows/test.yml', 'winzy-foo', 'winzy-foo/LICENSE', 'winzy-foo/README.md', 'winzy-foo/tests', 'winzy-foo/winzy_foo', 'winzy-foo/.github/workflows/publish.yml', 'winzy-foo/.github/workflows', 'winzy-foo/tests/test_winzy_foo.py', 'winzy-foo/winzy_foo/__init__.py', 'winzy-foo/pyproject.toml', 'winzy-foo/.gitignore'}
 
 def generate(directory, context):
     cookiecutter(
