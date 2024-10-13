@@ -1,15 +1,20 @@
 import winzy
 
 
-# An example plugin implementation.
+def create_parser(subparser):
+    parser = subparser.add_parser("{{cookiecutter.entry_name}}", description="{{ cookiecutter.description or "" }}")
+    # Add subprser arguments here.
+    parser.add_argument("-test", "--test", help="Example argument")
+    return parser
+
 
 class HelloWorld:
+    """ An example plugin """"
     __name__ = "{{cookiecutter.entry_name}}"
 
     @winzy.hookimpl
     def register_commands(self, subparser):
-        parser = subparser.add_parser("{{cookiecutter.entry_name}}", description="{{ cookiecutter.description or "" }}")
-        # Add subprser arguments here.
+        parser = create_parser(subparser)
         parser.set_defaults(func=self.hello)
     
     def hello(self, args):
