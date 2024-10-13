@@ -9,9 +9,9 @@ def test_create_parser():
 
     assert parser is not None
 
-    result = parser.parse_known_args(['2022-01-01', '--say'])[0]
-    assert result.say is True
-    assert result.datetext == ["2022-01-01"]
+    result = parser.parse_known_args(['--test', 'hello'])
+    assert result.test == "hello"
+
 
 def test_plugin(capsys):
     w.{{cookiecutter.entry_name}}_plugin.hello(None)
