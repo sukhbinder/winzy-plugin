@@ -27,3 +27,7 @@ test = ["pytest"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
