@@ -9,7 +9,7 @@ def test_create_parser():
 
     assert parser is not None
 
-    result = parser.parse_known_args(['--test', 'hello'])
+    result = parser.parse_args(['--test', 'hello'])
     assert result.test == "hello"
 
 
