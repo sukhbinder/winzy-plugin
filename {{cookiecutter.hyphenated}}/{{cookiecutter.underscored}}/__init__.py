@@ -9,7 +9,7 @@ def create_parser(subparser):
 
 
 class HelloWorld:
-    """ An example plugin """
+    """ {{ cookiecutter.description or "" }} """
     __name__ = "{{cookiecutter.entry_name}}"
 
     @winzy.hookimpl
@@ -18,7 +18,7 @@ class HelloWorld:
         parser.set_defaults(func=self.hello)
     
     def hello(self, args):
-        # this routine will be called when "winzy "{{cookiecutter.entry_name}} is called."
+        # this routine will be called when "winzy {{cookiecutter.entry_name}} is called."
         print("Hello! This is an example ``winzy`` plugin.")
 
 {{cookiecutter.entry_name}}_plugin = HelloWorld()
