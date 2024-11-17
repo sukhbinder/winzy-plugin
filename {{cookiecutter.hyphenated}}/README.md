@@ -13,7 +13,7 @@ First configure your Winzy project [to use Winzy](https://github.com/sukhbinder/
 
 Then install this plugin in the same environment as your Winzy application.
 ```bash
-pip install {{ cookiecutter.hyphenated }}
+winzy install {{ cookiecutter.hyphenated }}
 ```
 ## Usage
 
