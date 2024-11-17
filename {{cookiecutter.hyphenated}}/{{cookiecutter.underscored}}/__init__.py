@@ -8,7 +8,7 @@ def create_parser(subparser):
     return parser
 
 
-class HelloWorld:
+class WinzyPlugin:
     """ {{ cookiecutter.description or "" }} """
     __name__ = "{{cookiecutter.entry_name}}"
 
@@ -21,4 +21,4 @@ class HelloWorld:
         # this routine will be called when "winzy {{cookiecutter.entry_name}} is called."
         print("Hello! This is an example ``winzy`` plugin.")
 
-{{cookiecutter.entry_name}}_plugin = HelloWorld()
+{{cookiecutter.entry_name}}_plugin = WinzyPlugin()
