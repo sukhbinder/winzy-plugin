@@ -9,7 +9,11 @@
 
 ## Installation
 
-First configure your Winzy project [to use Winzy](https://github.com/sukhbinder/winzy).
+First [install winzy](https://github.com/sukhbinder/winzy) by typing
+
+```bash
+pip install winzy
+```
 
 Then install this plugin in the same environment as your Winzy application.
 ```bash
