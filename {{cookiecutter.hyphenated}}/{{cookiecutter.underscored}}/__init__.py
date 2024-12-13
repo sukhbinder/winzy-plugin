@@ -4,7 +4,7 @@ import winzy
 def create_parser(subparser):
     parser = subparser.add_parser("{{cookiecutter.entry_name}}", description="{{ cookiecutter.description or "" }}")
     # Add subprser arguments here.
-    parser.add_argument("-test", "--test", type="str", help="Example argument")
+    parser.add_argument("-test", "--test", type=str, help="Example argument")
     return parser
 
 
