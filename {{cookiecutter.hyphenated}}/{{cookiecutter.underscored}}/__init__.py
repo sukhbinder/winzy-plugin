@@ -14,11 +14,15 @@ class WinzyPlugin:
 
     @winzy.hookimpl
     def register_commands(self, subparser):
-        parser = create_parser(subparser)
-        parser.set_defaults(func=self.hello)
+        self.parser = create_parser(subparser)
+        self.parser.set_defaults(func=self.run)
+
+    def run(self, args):
+        # add actual call here
+        pass
     
     def hello(self, args):
-        # this routine will be called when "winzy {{cookiecutter.entry_name}} is called."
+        # this routine will be called when 'winzy {{cookiecutter.entry_name}}' is called.
         print("Hello! This is an example ``winzy`` plugin.")
 
 {{cookiecutter.entry_name}}_plugin = WinzyPlugin()
