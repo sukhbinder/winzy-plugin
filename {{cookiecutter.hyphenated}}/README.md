@@ -21,7 +21,7 @@ winzy install {{ cookiecutter.hyphenated }}
 ```
 ## Usage
 
-Usage instructions go here.
+To get help type ``winzy  {{ cookiecutter.entry_name }} --help``
 
 ## Development
 
