@@ -15,7 +15,7 @@ First [install winzy](https://github.com/sukhbinder/winzy) by typing
 pip install winzy
 ```
 
-Then install this plugin in the same environment as your Winzy application.
+Then install this plugin in the same environment as your winzy application.
 ```bash
 winzy install {{ cookiecutter.hyphenated }}
 ```
