@@ -1,7 +1,7 @@
 import pytest
 import {{ cookiecutter.underscored }} as w
 
-from argparse import Namespace, ArgumentParser
+from argparse import ArgumentParser
 
 def test_create_parser():
     subparser = ArgumentParser().add_subparsers()
